@@ -2,10 +2,21 @@
 This is a names calculator derived from the Ghanian culture
 where children are given their names based on the day of the week they were born.
 
+# Table of contents
+i. [Installation] (https://github.com/NewtonGitau/akan-names-ip/blob/main/README.md#installation)
+ii. [Languages] (https://github.com/NewtonGitau/akan-names-ip/blob/main/README.md#languages)
+iii. [screenshot] (https://github.com/NewtonGitau/akan-names-ip/blob/main/README.md#screenshots)
+iv. [contributing] (https://github.com/NewtonGitau/akan-names-ip/blob/main/README.md#contributing)
+v. [license] (https://github.com/NewtonGitau/akan-names-ip/blob/main/README.md#license)
+
+
 ## Installation
 1. Go to your prefered browser.
 2. In the url section of the browser enter this link; https://newtongitau.github.io/akan-names-ip/
 3. Hit enter to view the webpage.
+
+## Languages
+Languages mainly used are Java Script, HTML and CSS. 
 
 ## Screenshots
 ![Screenshot](https://github.com/NewtonGitau/akan-names-ip/blob/main/images/Screenshot-01.png)
