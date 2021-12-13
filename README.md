@@ -8,8 +8,8 @@ where children are given their names based on the day of the week they were born
 3. Hit enter to view the webpage.
 
 ## Screenshots
-![Screenshot](images/screenshot-01.png)
+![Screenshot](https://github.com/NewtonGitau/akan-names-ip/blob/main/images/Screenshot-01.png)
 This is the look of the web page title.
 
-![Screenshot](images/screenshot-02.png)
+![Screenshot](https://github.com/NewtonGitau/akan-names-ip/blob/main/images/Screenshot%20-02.png)
 This is a preview of the footer of the webpage.
