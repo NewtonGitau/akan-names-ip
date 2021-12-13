@@ -1,0 +1,17 @@
+@media screen and (min-width: 480px) {
+    body {
+    background-image: url(../images/blue.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    font-size: larger;
+    margin-left: 200px;
+    margin-bottom: 100px;
+    }
+    form {
+        text-align: center;
+      }
+      
+      input[type=text] {
+        border: 2px solid red;
+        border-radius: 4px;
+      }
