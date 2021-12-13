@@ -4,6 +4,9 @@
 This is a names calculator derived from the Ghanian culture
 where children are given their names based on the day of the week they were born.
 
+## Version
+Current version V1.0
+
 ## Installation
 1. Go to your prefered browser.
 2. In the url section of the browser enter this link; https://newtongitau.github.io/akan-names-ip/
