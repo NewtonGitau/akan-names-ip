@@ -1,48 +1,54 @@
-var day=document.getElementById("day")
-var month=document.getElementById("month")
-var year=document.getElementById("year")
-var result=document.getElementById("result")
-var male=document.getElementById("male")
-var female=document.getElementById("female")
+
+let maleNames = ["Kwasi", "Kwadwo", "Kwabena", "Kwaku", "Yaw", "Kofi", "Kwame"]
+let femaleNames = ["Akosua", "Adwoa", "Abenaa", "Akua", "Yaa", "Afua", "Ama"]
 
 
-function validateForm() {
-    let x = document.forms["myForm"]["fname"].value;
-    if(day<0 || day>31)
-        alert("Invalid day!")
-      return false;
-      if(month<0 || month>12)
-        alert("Invalid month!")
-        return false;
-    }
-  }
 
-    function calculate()
-    {
-        var dates=new Date(day.value, month.value, year.value);
-        
-        if(gender="male") {
-            console.log(); switch (maleDays)
-        
-            {   case 0:result.innerHTML="Kwasi"; break;
-                case 1:result.innerHTML="Kwadwo"; break;
-                case 2:result.innerHTML="Kwabena"; break;
-                case 3:result.innerHTML="Kwaku"; break;
-                case 4:result.innerHTML="Yaw"; break;
-                case 5:result.innerHTML="Kofi"; break;
-                case 6:result.innerHTML="Kwame"; break;
-            }
-        } else if(gender="female"){
-            console.log(); 
-            switch (femaleDays)
-            {
-                case 0:result.innerHTML="Akosua"; break;
-                case 1:result.innerHTML="Adwoa"; break;
-                case 2:result.innerHTML="Abenaa"; break;
-                case 3:result.innerHTML="Akua"; break;
-                case 4:result.innerHTML="Yaa"; break;
-                case 5:result.innerHTML="Afua"; break;
-                case 6:result.innerHTML="Ama"; break;
-            }
+function calculate(){
+    document.getElementById("form").onsubmit();
+       
+
+    var day=document.getElementById("day").value;
+    var month=document.getElementById("month").value;
+    var year=document.getElementById("year").value;
+    
+    var male = document.getElementById("male").addEventListener("check");
+    var female = document.getElementById("female").addEventListener("check");
+
+    year[0] = firstDigit;
+    year[1] = secondDigit;
+    year[2] = thirdDigit;
+    year[3] = fourthDigit;
+
+    let CC = parseInt(firstDigit + secondDigit);
+    let YY = parseInt(thirdDigit + secondDigit);
+
+    let newDay = parseInt(day);
+    let newMonth = parseInt(month);
+
+
+    if (day < 0 || day  > 31) {
+        function wrongDay(){
+            alert("This is a wrong day!");
         }
+        wrongDay();
+    }  else if (month < 0 || month  > 12) {
+        function wrongMonth(){
+            alert("This is a wrong month!");
+        }
+        wrongMonth();
+    } else {
+        male.checked = true;
+        let dayWeek = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(newMonth+1)/10)) + newDay ) % 7
+        let displayMale = maleNames [dayWeek];
+        document.getElementById("result").innerHTML = displayMale + " is your Akan name."
     }
+        // declare if female is true
+
+        female.checked = true;
+        let dayWeek = ( ( (CC/4) -2*CC-1) + ((5*YY/4) ) + ((26*(newMonth+1)/10)) + newDay ) % 7
+        let displayFemale = maleNames [dayWeek];
+        document.getElementById("result").innerHTML = displayFemale + " is your Akan name."
+       
+
+}
