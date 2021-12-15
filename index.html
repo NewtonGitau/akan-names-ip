@@ -16,7 +16,7 @@
             <p>This calculator is used to describe Akan name depending on gender and day of the week born. </p>
         </div>
         <div body>
-            <form name="myForm" onsubmit="return validateForm()">
+            <form id="form">
                 This is a names calculator derived from the Ghanian culture <br>
                 where children are given their 
                 names based on the day of the week they were born. <br>
@@ -31,10 +31,10 @@
                 <label for="Sex"> Sex</label> <br>
                 <select name="gender" id="sex">
                     <option value="" disabled selected hidden>select gender</option>
-                    <option value="male" id="male">Male</option>
-                    <option value="female" id="female">Female</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
                 </select> <br>
-                <button onclick="calculate()">Get Name</button>
+                <button class="button">Get Name</button>
                 <hr>
                 <p id="result"></p>
             </form>
